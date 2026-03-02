@@ -1,0 +1,241 @@
+/* ====== GLOBAL ====== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f3f3f8;
+    color: #333333;
+}
+/* ====== TOP MENU ====== */
+.top-menu {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(9, 233, 46, 0.12);
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #181a18;
+    transition: 0.2s;
+}
+
+.top-menu a:hover {
+    color: #2fdd0c;
+    text-decoration: underline;
+}
+
+
+/* ====== CONTAINER ====== */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(117, 240, 45, 0.15);
+}
+
+/* ====== NAVIGATION ====== */
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4B0082;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* ====== HEADER ====== */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* ====== BUTTON TAMBAH ====== */
+.add-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    background: #4B0082;
+    padding: 8px 14px;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.add-btn:hover {
+    background: #360061;
+}
+
+/* ====== TABLE ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Header table */
+table thead th {
+    background: #000000;
+    color: #fff;
+    padding: 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Isi tabel */
+table tbody tr:nth-child(even) {
+    background: #50eb3b;
+    color: #fff;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #1e920e;
+    color: #fff;
+}
+
+table td {
+    padding: 12px;
+    font-size: 20px;
+}
+
+/* Hover effect baris */
+table tbody tr:hover {
+    background: #2e0053;
+    transition: 0.2s;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        background: #096b16;
+        border-radius: 8px;
+    }
+
+    table td {
+        text-align: right;
+        padding: 10px 15px;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+    /* ====== Card ====== */
+.card {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* ====== Judul ====== */
+.card h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* ====== Grid Form ====== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+}
+
+/* Biar textarea 1 kolom penuh */
+.form-group.full {
+    grid-column: span 2;
+}
+
+/* ====== Label ====== */
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* ====== Input, Select, Textarea ====== */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4B0082;
+    outline: none;
+    box-shadow: 0 0 5px rgba(75,0,130,0.3);
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+/* ====== Tombol ====== */
+.btn {
+    grid-column: span 2;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #060607;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #0ee73d;
+}
+
+}
